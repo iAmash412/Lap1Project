@@ -1,10 +1,11 @@
 # Lap1Project - [PROJECT-NAME]
 
 Gebru Lap 1 Project Team:
+- Aafthab Ashraff
+- Alfie Kelly
+- Albert Stoykov
 - Prishal Makwana
--
--
--
+
 
 Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 
