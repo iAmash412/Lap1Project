@@ -27,20 +27,20 @@
   <body>
 
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar navbar-light bg-light ">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img src="/client/penguin-logo.png" width="8%"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mynavbar">
-          <ul class="navbar-nav me-auto">
-          </ul>
-          <form class="d-flex justify-content-center">
-            <input class="form-control me-2" type="text" placeholder="Search">
-            <button class="btn btn-primary" type="button">Search</button>
+        <div class="d-flex m-auto">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="max-width: 400px;">
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
+        <button class="navbar-toggler ms-auto" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>  
       </div>
     </nav>
     <!-- Navbar-->
