@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,8 +20,67 @@
 </head>
 
 <body>
+  
+     <!-- Hero Section -->
+    <header>
+      <div id="heroImage">
+        <div class="container-md">
+          <div id="heroText">
+            <h1 class="display-4" id="heroTitle">Penguins</h1>
+            <p id="heroDescription">
+              The wise man therefore always holds in these matters to this
+              principle of selection: he rejects pleasures to secure other
+              greater pleasures, or else he endures pains to avoid worse pains."
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
 
-  <hr class="h">
+    <section id="newPostSection">
+      <div class="container-md" id="newPostContainer">
+        <form>
+          <div class="px-4">
+            <label for="postTitleContent" class="form-label">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="postTitleContent"
+              placeholder="Give your post a title"
+            />
+
+            <label for="postBodyContent" class="form-label">Body</label>
+            <textarea
+              name=""
+              id="postBodyContent"
+              rows="10"
+              maxlength="1200"
+              class="form-control"
+              placeholder="What’s on your mind & what have you been up to today to help the penguins ..."
+            ></textarea>
+            <div class="d-flex justify-content-between">
+              <button
+                type="button"
+                id="addGifBtn"
+                class="btn btn-outline-primary btn-lg my-4"
+              >
+                Add GIF
+              </button>
+              <button
+                type="submit"
+                id="createPostBtn"
+                class="btn btn-primary btn-lg my-4"
+              >
+                Create Post
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  
+  
+  
   <!--************************************************************************************************-->
   <!-- FOOTER  -->
   <!--************************************************************************************************-->
@@ -62,5 +122,6 @@
   <!--************************************************************************************************-->
 
 </body>
+  </body>
 
 </html>
