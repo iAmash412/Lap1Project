@@ -1,0 +1,32 @@
+{
+  "name": "lap1project",
+  "version": "1.0.0",
+  "description": "Gebru Lap 1 Project Team: - Aafthab Ashraff - Alfie Kelly - Albert Stoykov - Prishal Makwana",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon server/ index.js",
+    "test": "jest --silent --watchAll",
+    "coverage": "jest --coverage --silent"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prishal-git/Lap1Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prishal-git/Lap1Project/issues"
+  },
+  "homepage": "https://github.com/Prishal-git/Lap1Project#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "heroku": "^7.33.3"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}
