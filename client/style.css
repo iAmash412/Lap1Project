@@ -1,3 +1,4 @@
+/* *********************************************************************************** */
 /* Hero section  */
 #heroImage {
   background-image: url("images/pengiunsImage.gif");
@@ -10,8 +11,6 @@
 #heroText {
   align-self: center;
   padding-top: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 #heroTitle,
@@ -23,6 +22,7 @@
   text-align: center;
 }
 
+/* *********************************************************************************** */
 /* New post section  */
 
 #newPostSection {
@@ -30,21 +30,18 @@
 }
 
 #newPostContainer {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #newPostContainer label {
-  font-size: xx-large;
+  font-size: 1.5rem;
   padding-top: 20px;
-}
-
-#postTitleContent {
-  height: 50px;
 }
 
 #postTitleContent::placeholder,
 #postBodyContent::placeholder {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 #addGifBtn,
@@ -62,6 +59,7 @@
   background-color: transparent;
 }
 
+/* *********************************************************************************** */
 /* Top post section  */
 
 #topPostSection {
@@ -69,5 +67,21 @@
 }
 
 #topPostContainer {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#topPostContent {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel-caption {
+  position: relative;
+  color: #000;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 0;
 }
