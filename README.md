@@ -11,7 +11,7 @@ Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 
 ## Description 
 [What does the application do]
-  * pengu.com is a community journaling website, where people can share and spred their love for penguins, as well as tackle topics related to climate change.
+  * pengu.com is a community journaling website, where people can share and spred their love for penguins,<br> as well as tackle topics related to climate change.
 
 
 ---
