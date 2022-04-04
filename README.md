@@ -41,6 +41,7 @@ Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 
 - HTML/CSS
 - JavaScript 
+- Bootstrap 5
 - etc...
 
 ---
