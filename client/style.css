@@ -1,4 +1,6 @@
+
 /* *********************************************************************************** */
+
 /* Hero section  */
 #heroImage {
   background-image: url("images/pengiunsImage.gif");
@@ -84,4 +86,15 @@
   left: 0;
   right: 0;
   padding-bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.05);
 }
+
+
+/* For line breaker */
+.h {
+    width: 100%;
+    height: 2px;
+    border: 0 none;
+    margin-left: auto;
+    margin-right: auto;

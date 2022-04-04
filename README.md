@@ -1,6 +1,6 @@
-# Lap1Project - [PROJECT-NAME]
+# Lap1Project - Penguins
 
-Gebru Lap 1 Project Team:
+Gebru Lap 1 Project Team Penguins:
 - Aafthab Ashraff
 - Alfie Kelly
 - Albert Stoykov
@@ -11,6 +11,7 @@ Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 
 ## Description 
 [What does the application do]
+  * pengu.com is a community journaling website, where people can share and spred their love for penguins,<br> as well as tackle topics related to climate change.
 
 
 ---
@@ -40,6 +41,7 @@ Released 01/04/2022 14:00, Sumbitted 08/04/2022 [XX:00]
 
 - HTML/CSS
 - JavaScript 
+- Bootstrap 5
 - etc...
 
 ---
@@ -58,7 +60,7 @@ Defining and refining
 Organising and planning 
 - Agreed on a single method of communication about this project 
 - Assigned a few tickets to each team memeber 
-- Planned in some regular catch up sessions to see how everyone is doing and if we need to re-align/re-distribute work 
+- Planned regular catch up sessions to see how everyone is doing and if we need to re-align/re-distribute work 
 
 ---
 
@@ -66,7 +68,7 @@ Organising and planning
 
 ## Wins
 
-- 
+- Did all the planning and a big part of the front-end work on day one.
 -
 
 ## Chalenges
@@ -78,7 +80,7 @@ Organising and planning
 
 # Bugs
 
-- [ ] 
+- Search bar inside navbar refused to get centered. 
 
 ---
 
