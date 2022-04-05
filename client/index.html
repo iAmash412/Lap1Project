@@ -23,21 +23,88 @@
   
   <!-- Navbar-->
     <nav class="navbar navbar-light bg-light ">
-      <div class="container-fluid d-inline-flex justify-content-between">
-        <a class="navbar-brand" href="#"><img class="penguin-logo" src="/client/images/penguin-logo.png" width="22%"></a>
-        <div class="d-flex m-auto">
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 300px;">
+      <div class="container-fluid">
+        <a class="h-100 d-inline-block navbar-brand col-sm-3" href="#"><img class="penguin-logo" src="/client/images/penguin-logo.png" width="40vw"></a>
+
+        <!-- Search Bar-->
+        <div class="col-sm-6 col-6  my-auto search-box">
+          <div class="input-group form-container">
+            <input type="text" name="search" class="form-control search-input" placeholder="" autofocus="autofocus" autocomplete="off">
             <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          </div>
         </div>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-          data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>  
+
+        <!-- Hamburger Menu-->
+        <div class="hamburger-menu col-sm-6">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+      
+          <ul class="menu__box">
+            <div class="menu__contents">
+
+            <li>
+              <a class="menu__item home" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-house"></i>
+                </div>Home
+              </a>
+            </li>
+
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-bookmark"></i>
+                </div> Bookmarks
+              </a>
+            </li>
+            
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-bookmark"></i> 
+                </div>Lists
+              </a>
+            </li>
+            
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-circle-info"></i>
+                </div>About
+                </a>
+            </li>
+            
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-gear"></i>
+                </div>Options
+              </a>
+            </li>
+            
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-people-group"></i>
+                </div>Team
+              </a>
+            </li>
+            
+            <li>
+              <a class="menu__item" href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-address-book"></i>
+                </div>Contact
+              </a>
+            </li>
+            </div>
+          </ul>
+        </div>
       </div>
     </nav>
+    <!-- Hamburger Menu-->
     <!-- Navbar-->
   
      <!-- Hero Section -->
