@@ -1,22 +1,21 @@
 //************************************************************************************************//
 //Event listener for CREATE POST//
 //************************************************************************************************//
-const section = document.getElementById('newPostSection');
+const section = document.getElementById("newPostSection");
 
-section.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const formData = new FormData(section);
-    const title = formData.get('postTitleContent');
-    const Content = form.get('postBodyContent');
-    
-    const post = {
-        title,
-        Content
-    }
+section.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(section);
+  const title = formData.get("postTitleContent");
+  const Content = form.get("postBodyContent");
 
-    console.log(post)
+  const post = {
+    title,
+    Content,
+  };
+
+  console.log(post);
 });
-
 
 //************************************************************************************************//
 // SHOW/HIDE toggle for individual post//
@@ -28,19 +27,13 @@ function toggleComments() {
 function togglePostBody() {
   document.getElementById("postBodySection").classList.toggle("min");
 
-  let btn = document.querySelector(".readMoreBtn").innerHTML;
-
-  if (btn === "Read More") {
-    btn.innerHTML = "Read Less";
-  } else {
-    btn.innerHTML;
+  let btn = document.querySelector(".readMoreBtn").innerText;
+  if (btn === "Read more") {
+    document.querySelector(".readMoreBtn").innerText = "Read less";
+  } else if (btn === "Read less") {
+    document.querySelector(".readMoreBtn").innerText = "Read more";
   }
 }
-
-
-
-
-
 
 /*const data = {postTitle, posttext};
 const options ={
@@ -52,5 +45,3 @@ const options ={
 };
 
 fetch("/newpost", options)*/
-
-
