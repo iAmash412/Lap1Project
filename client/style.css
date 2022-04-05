@@ -4,15 +4,15 @@
 #newPostSection,
 #topPostSection,
 #individualPostSection {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #newPostContainer,
 #topPostContainer,
 .individualContainer {
   background-color: #f8f9fa;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .row {
@@ -153,17 +153,28 @@
 #heroDescription {
   background-color: rgba(255, 255, 255, 0.9);
   color: #000;
-  padding: 20px;
   margin: auto;
   text-align: center;
+}
+
+#heroTitle {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#heroDescription {
+  padding-bottom: 20px;
 }
 
 /* *********************************************************************************** */
 /* New post section  */
 
-#newPostContainer label {
-  font-size: 1.5rem;
+#newPostsTitle {
   padding-top: 20px;
+  text-align: center;
+}
+
+#newPostContainer h5 {
+  margin-top: 0.75rem;
 }
 
 #postTitleContent::placeholder,
@@ -203,6 +214,11 @@
   padding-bottom: 15px;
 }
 
+#topPostsTitle {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
 .carousel-caption {
   position: relative;
   color: #000;
@@ -216,19 +232,18 @@
 /* *********************************************************************************** */
 /* Latest Post Section  */
 #latestPostContent {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
-hr {
-  margin-top: 0px;
+.titleLine {
+  width: 50%;
 }
 
-#latestPosts {
-  margin-top: 20px;
+#latestPostsTitle {
+  /* margin-top: 20px; */
   text-align: center;
 }
+
 /* *********************************************************************************** */
 /* Individual Post Section  */
 
@@ -391,6 +406,12 @@ hr {
 }
 
 #termsAndConditions {
-  float: right;
   color: black;
+}
+
+@media screen and (min-width: 992px) {
+  #termsAndConditions {
+    float: right;
+    color: black;
+  }
 }
