@@ -85,9 +85,10 @@
   left: 0;
   right: 0;
   padding-bottom: 0;
-
-  background-color: rgba(0, 0, 0, 0.05);
+  padding-top: 0;
 }
+/* *********************************************************************************** */
+/* Footer section  */
 
 /* For line breaker */
 .h {
@@ -96,4 +97,26 @@
   border: 0 none;
   margin-left: auto;
   margin-right: auto;
+}
+
+#copyrightContainer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#copyrightContainer a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+#credits {
+  float: left;
+}
+
+#credits a {
+  color: black;
+}
+
+#termsAndConditions {
+  float: right;
+  color: black;
 }
