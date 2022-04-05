@@ -190,9 +190,10 @@
 }
 
 #addGifBtn:hover {
-    filter: invert(62%) sepia(0%) saturate(1113%) hue-rotate(158deg) brightness(81%) contrast(93%); /* https://codepen.io/sosuke/pen/Pjoqqp */
-    border-radius: 10px;
-    transition: 0.2s linear;
+  filter: invert(62%) sepia(0%) saturate(1113%) hue-rotate(158deg)
+    brightness(81%) contrast(93%); /* https://codepen.io/sosuke/pen/Pjoqqp */
+  border-radius: 10px;
+  transition: 0.2s linear;
 }
 
 #createPostBtn:hover {
@@ -337,6 +338,13 @@
 .sendCommentBtn {
   width: 100%;
 }
+
+@media screen and (max-width: 576px) {
+  .sendCommentBtn {
+    margin-top: 20px;
+  }
+}
+
 #commentsSection {
   transition: all 0.5s;
 }
