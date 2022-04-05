@@ -1,6 +1,21 @@
 
-/* *********************************************************************************** */
 
+/* Navbar section  */
+
+.navbar{
+    padding: 10px;
+}
+
+.navbar-brand{
+    padding: 0;
+    margin: 0;
+}
+
+.penguin-logo{
+    padding: 5px;
+}
+
+/* *********************************************************************************** */
 /* Hero section  */
 #heroImage {
   background-image: url("images/pengiunsImage.gif");
