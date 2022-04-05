@@ -79,12 +79,12 @@ Organising and planning
 
 - Did all the planning and a big part of the front-end work on day one.
 - Dividing up the team and allowing half of the team to focus on front-end and the other on back-end in for the first two days really helped creating the skeletons of the application 
-- 
+- Responsive Navbar with detailed Hamburger Menu
 
 ## Chalenges
 
 - Search bar inside navbar refused to get centered. 
-- 
+- Giphy API
 
 ---
 
