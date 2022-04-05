@@ -1,7 +1,6 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -17,9 +16,10 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.3",
-    "jsonfile":"^6.1.0"
+    "jsonfile": "^6.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
-  }
+  },
+  "description": ""
 }
