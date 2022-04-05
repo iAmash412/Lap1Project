@@ -4,7 +4,8 @@
 #newPostSection,
 #topPostSection,
 #individualPostSection {
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #newPostContainer,
@@ -23,7 +24,7 @@
 
 .navbar {
   padding: 10px;
-  box-shadow: 0 2px 2px -2px rgba(0,0,0,.5);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.5);
 }
 
 .navbar-brand {
@@ -170,8 +171,6 @@
   font-size: 1.25rem;
 }
 
-
-
 #addGifBtn,
 #createPostBtn {
   width: 200px;
@@ -210,19 +209,19 @@
 /* *********************************************************************************** */
 /* Latest Post Section  */
 #latestPostContent {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  hr{
-      margin-top: 0px;
-  }
+hr {
+  margin-top: 0px;
+}
 
-  #latestPosts{
-      margin-top: 20px;
-      text-align: center;
-  }
+#latestPosts {
+  margin-top: 20px;
+  text-align: center;
+}
 /* *********************************************************************************** */
 /* Individual Post Section  */
 
@@ -267,6 +266,7 @@
   position: relative;
   right: 0;
   width: 200px;
+  margin-bottom: 20px;
 }
 
 .horizontalEmojis {

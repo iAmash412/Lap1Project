@@ -331,11 +331,27 @@
               </button>
             </div>
           </div>
+
           <hr />
-          <div class="row hide" id="commentsSection">
+
+          <div class="row d-flex pt-1 pb-4">
+            <div class="col">2 days, 4 hours ago</div>
+            <div class="col commentIconAndNumber">
+              <button class="toggleCommentsBtn" onclick="toggleComments()">
+                <i class="fa-solid fa-message pe-2"></i>
+                <span class="commentCounter">3</span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="row d-flex justify-content-center hide"
+            id="commentsSection"
+          >
+            <hr />
             <div class="row">
-              <div class="col">
-                <h5 class="postTitle py-2">Leave a comment or reaction</h5>
+              <div class="col ps-0">
+                <h4 class="py-2">Leave a comment or reaction</h4>
               </div>
               <div class="col horizontalEmojis">
                 <a
@@ -353,7 +369,7 @@
                 >
               </div>
             </div>
-            <div class="row pt-2">
+            <div class="row ps-0 pt-2">
               <div class="col-10">
                 <input
                   type="text"
@@ -371,8 +387,8 @@
                   Send
                 </button>
               </div>
-              <hr />
             </div>
+
             <div class="row d-flex justify-content-center">
               <div class="row commentContainer p-3 m-2">
                 <div class="col-1">
@@ -413,16 +429,6 @@
                   2 days, 4 hours ago
                 </div>
               </div>
-              <hr />
-            </div>
-          </div>
-          <div class="row d-flex">
-            <div class="col">2 days, 4 hours ago</div>
-            <div class="col commentIconAndNumber">
-              <button class="toggleCommentsBtn" onclick="toggleComments()">
-                <i class="fa-solid fa-message pe-2"></i>
-                <span class="commentCounter">3</span>
-              </button>
             </div>
           </div>
         </div>
