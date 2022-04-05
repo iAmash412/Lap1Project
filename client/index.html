@@ -30,7 +30,7 @@
   <!--************************************************************************************************-->
     <!-- NAVBAR -->
     <!--************************************************************************************************-->
-    <nav class="navbar navbar-light bg-light ">
+    <nav class="navbar navbar-light bg-light fixed-top">
       <div class="container-fluid">
         <a class="h-100 d-inline-block navbar-brand col-sm-3" href="#"><img class="penguin-logo" src="/client/images/penguin-logo.png" width="40vw"></a>
 
@@ -226,124 +226,135 @@
     <!--************************************************************************************************-->
     <!-- INDIVIDUAL POST SECTION -->
     <!--************************************************************************************************-->
-    <section id="individualPostSection">
-      <div class="container-md individualContainer">
-        <div class="individualPostContent">
-          <div class="row">
-            <div class="col-1 emojiCol">
-              <div>
-                <a class="btn btn-outline-primary emoji" href="#!" role="button"
-                  ><span class="icons">😍</span>
-                  <span class="emojiCounter ps-1">2</span>
-                </a>
-              </div>
-              <div>
-                <a class="btn emoji" href="#!" role="button"
-                  ><span class="icons">😐</span></a
-                >
-              </div>
-              <div>
-                <a class="btn emoji" href="#!" role="button"
-                  ><span class="icons">😔</span></a
-                >
+
+    <section id="latestPostSection">
+      <div class="container-md" id="latestPostContainer">
+        <div id="latestPostContent">
+          <h2 id="latestPosts">Latest Posts</h2>
+          <hr class="mx-auto" style="height:1.5px; width:50%; border-width:0;">
+
+          <section id="individualPostSection">
+            <div class="container-md individualContainer">
+              <div class="individualPostContent">
+                <div class="row">
+                  <div class="col-1 emojiCol">
+                    <div>
+                      <a class="btn btn-outline-primary emoji" href="#!" role="button"
+                        ><span class="icons">😍</span>
+                        <span class="emojiCounter ps-1">2</span>
+                      </a>
+                    </div>
+                    <div>
+                      <a class="btn emoji" href="#!" role="button"
+                        ><span class="icons">😐</span></a
+                      >
+                    </div>
+                    <div>
+                      <a class="btn emoji" href="#!" role="button"
+                        ><span class="icons">😔</span></a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-10 ps-4">
+                    <h3 class="postTitle py-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, nisl
+                      magna libero molestie vitae consectetur lobortis sit.
+                    </h3>
+
+                    <div class="postBody">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                        scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                        auctor ipsum. Faucibus cras elementum ut nascetur orci
+                        senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                        magna arcu blandit felis sit enim mauris.
+                      </p>
+
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                        scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                        auctor ipsum. Faucibus cras elementum ut nascetur orci
+                        senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                        magna arcu blandit felis sit enim mauris.
+                      </p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                        scelerisque sit.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-1">
+                    <a class="btn postEllipsisBtn" href="#!" role="button"
+                      ><i class="fa-solid fa-ellipsis-vertical"></i
+                    ></a>
+                  </div>
+                  <div class="row d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary mt-4 readMoreBtn">
+                      Read more
+                    </button>
+                  </div>
+                </div>
+
+                <hr />
+                <div class="row">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="postTitle py-2">Leave a comment or reaction</h5>
+                    </div>
+
+                    <div class="col horizontalEmojis">
+                      <a
+                        class="btn btn-outline-primary emojiComments"
+                        href="#!"
+                        role="button"
+                        ><span class="icons">😍</span>
+                        <span class="emojiCommentsCounter ps-2">2</span>
+                      </a>
+
+                      <a class="btn emojiComments" href="#!" role="button"
+                        ><span class="icons">😐</span></a
+                      >
+
+                      <a class="btn emojiComments" href="#!" role="button"
+                        ><span class="icons">😔</span></a
+                      >
+                    </div>
+                  </div>
+                  <div class="row pt-2">
+                    <div class="col-10">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="comment"
+                        placeholder="comment"
+                      />
+                    </div>
+                    <div class="col-2 sendCommentCol">
+                      <button
+                        type="submit"
+                        class="btn btn-primary sendCommentBtn mb-3"
+                      >
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">Other comments</div>
+                </div>
+
+                <div class="row d-flex justify-content-between">
+                  <div class="col">XX days, XX hours ago</div>
+                  <div class="col"><i class="fa-solid fa-message"></i>3</div>
+                </div>
               </div>
             </div>
-            <div class="col-10 ps-4">
-              <h3 class="postTitle py-2">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, nisl
-                magna libero molestie vitae consectetur lobortis sit.
-              </h3>
+          </section>
 
-              <div class="postBody">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
-                  auctor ipsum. Faucibus cras elementum ut nascetur orci
-                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
-                  magna arcu blandit felis sit enim mauris.
-                </p>
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
-                  auctor ipsum. Faucibus cras elementum ut nascetur orci
-                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
-                  magna arcu blandit felis sit enim mauris.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                  scelerisque sit.
-                </p>
-              </div>
-            </div>
-
-            <div class="col-1">
-              <a class="btn postEllipsisBtn" href="#!" role="button"
-                ><i class="fa-solid fa-ellipsis-vertical"></i
-              ></a>
-            </div>
-            <div class="row d-flex justify-content-end">
-              <button type="button" class="btn btn-primary mt-4 readMoreBtn">
-                Read more
-              </button>
-            </div>
-          </div>
-
-          <hr />
-          <div class="row">
-            <div class="row">
-              <div class="col">
-                <h5 class="postTitle py-2">Leave a comment or reaction</h5>
-              </div>
-
-              <div class="col horizontalEmojis">
-                <a
-                  class="btn btn-outline-primary emojiComments"
-                  href="#!"
-                  role="button"
-                  ><span class="icons">😍</span>
-                  <span class="emojiCommentsCounter ps-2">2</span>
-                </a>
-
-                <a class="btn emojiComments" href="#!" role="button"
-                  ><span class="icons">😐</span></a
-                >
-
-                <a class="btn emojiComments" href="#!" role="button"
-                  ><span class="icons">😔</span></a
-                >
-              </div>
-            </div>
-            <div class="row pt-2">
-              <div class="col-10">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="comment"
-                  placeholder="comment"
-                />
-              </div>
-              <div class="col-2 sendCommentCol">
-                <button
-                  type="submit"
-                  class="btn btn-primary sendCommentBtn mb-3"
-                >
-                  <i class="fa-solid fa-paper-plane"></i>
-                  Send
-                </button>
-              </div>
-            </div>
-            <hr />
-            <div class="row">Other comments</div>
-          </div>
-
-          <div class="row d-flex justify-content-between">
-            <div class="col">XX days, XX hours ago</div>
-            <div class="col"><i class="fa-solid fa-message"></i>3</div>
-          </div>
         </div>
       </div>
     </section>
