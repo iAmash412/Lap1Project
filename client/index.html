@@ -20,90 +20,116 @@
   <script src="script.js" defer></script>
 </head>
 
-<body>
-  <!--************************************************************************************************-->
-  <!-- NAVBAR -->
-  <!--************************************************************************************************-->
-  <nav class="navbar navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="h-100 d-inline-block navbar-brand col-sm-3" href="#"><img class="penguin-logo"
-          src="/client/images/penguin-logo.png" width="40vw"></a>
 
+  <body>
+    <!--************************************************************************************************-->
+    <!-- NAVBAR -->
+    <!--************************************************************************************************-->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="h-100 d-inline-block navbar-brand col-sm-3" href="#"
+          ><img class="penguin-logo" src="images/penguin-logo.png" width="40vw"
+        /></a>
 
-      <!-- Search Bar-->
-      <div class="col-sm-6 col-6  my-auto search-box">
-        <div class="input-group form-container">
-          <input type="text" name="search" class="form-control search-input" placeholder="" autocomplete="off">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+        <!-- Search Bar-->
+        <div class="col-sm-6 col-6 my-auto search-box">
+          <div class="input-group form-container">
+            <input
+              type="text"
+              name="search"
+              class="form-control search-input"
+              placeholder=""
+              autocomplete="off"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </div>
+
         </div>
       </div>
 
 
-      <!-- Hamburger Menu-->
-      <div class="hamburger-menu col-sm-6">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
+        <!-- Hamburger Menu-->
+        <div class="hamburger-menu col-sm-6">
+          <input id="menu__toggle" type="checkbox" />
+          <label class="menu__btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="menu__box">
+            <div class="menu__contents">
+              <li>
+                <a class="menu__item" href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-bookmark"></i>
+                  </div>
+                  Bookmarks
+                </a>
+              </li>
 
-        <ul class="menu__box">
-          <div class="menu__contents">
 
-            <li>
-              <a class="menu__item home" href="#">
-                <div class="icon">
-                  <i class="fa-solid fa-house"></i>
-                </div>Home
-              </a>
-            </li>
+              <li>
+                <a class="menu__item" href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-bookmark"></i>
+                  </div>
+                  Lists
+                </a>
+              </li>
+              <li>
+                <a class="menu__item" href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                  </div>
+                  About
+                </a>
+              </li>
+              <li>
+                <a class="menu__item" href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-gear"></i>
+                  </div>
+                  Options
+                </a>
+              </li>
+              <li>
+                <a class="menu__item" href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-people-group"></i>
+                  </div>
+                  Team
+                </a>
+              </li>
+              <li>
+                <a class="menu__item" href="#">
+                  <div class="icon">
+                    <i class="fa-solid fa-address-book"></i>
+                  </div>
+                  Contact
+                </a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Hamburger Menu End-->
+    <!-- Navbar End-->
 
-            <li>
-              <a class="menu__item" href="#">
-                <div class="icon">
-                  <i class="fa-solid fa-bookmark"></i>
-                </div> Bookmarks
-              </a>
-            </li>
-
-            <li>
-              <a class="menu__item" href="#">
-                <div class="icon">
-                  <i class="fa-solid fa-bookmark"></i>
-                </div>Lists
-              </a>
-            </li>
-
-            <li>
-              <a class="menu__item" href="#">
-                <div class="icon">
-                  <i class="fa-solid fa-circle-info"></i>
-                </div>About
-              </a>
-            </li>
-
-            <li>
-              <a class="menu__item" href="#">
-                <div class="icon">
-                  <i class="fa-solid fa-gear"></i>
-                </div>Options
-              </a>
-            </li>
-
-            <li>
-              <a class="menu__item" href="#">
-                <div class="icon">
-                  <i class="fa-solid fa-people-group"></i>
-                </div>Team
-              </a>
-            </li>
-
-            <li>
-              <a class="menu__item" href="#">
-                <div class="icon">
-                  <i class="fa-solid fa-address-book"></i>
-                </div>Contact
-              </a>
-            </li>
+    <!-- Hero Section -->
+    <!--************************************************************************************************-->
+    <!-- HEADER -->
+    <!--************************************************************************************************-->
+    <header>
+      <div id="heroImage">
+        <div class="container-sm">
+          <div id="heroText">
+            <h1 class="display-4" id="heroTitle">Penguin Journals</h1>
+            <h5 id="heroDescription">
+              We are a group of conservationists of all penguins. With climate
+              change having a large impact on some penguin species we journal
+              what our community is doing to help these amazing birds!
+            </h5>
           </div>
         </ul>
       </div>
@@ -129,44 +155,113 @@
           </h5>
         </div>
       </div>
-    </div>
-  </header>
-  <!-- HEADER END -->
 
-  <!--************************************************************************************************-->
-  <!-- NEW POST SECTION -->
-  <!--************************************************************************************************-->
-  <section id="newPostSection">
-    <div class="container-md" id="newPostContainer">
-      <form>
-        <div class="px-4">
-          <label for="postTitleContent" class="form-label">Title</label>
-          <input type="text" class="form-control" id="postTitleContent" name="postTitleContent" placeholder="Give your post a title" />
+    </section>
+    <!-- NEW POST SECTION END -->
 
-          <label for="postBodyContent" class="form-label">Body</label>
-          <textarea name="" id="postBodyContent" name="postBodyContent" rows="5" maxlength="1200" class="form-control"
-            placeholder="What’s on your mind & what have you been up to today to help the penguins ..."></textarea>
-          <div class="d-flex justify-content-between">
-            <button type="button" id="addGifBtn" class="btn btn-outline-primary my-4">
-              Add GIF
-            </button>
-            <button type="submit" id="createPostBtn" name="createPostBtn" class="btn btn-primary my-4">
-              Create Post
-            </button>
+    <!--************************************************************************************************-->
+    <!-- TOP 3 POST SECTION -->
+    <!--************************************************************************************************-->
+    <section id="topPostSection">
+      <div class="container-md" id="topPostContainer">
+        <div id="topPostContent">
+          <h2>Top 3 posts</h2>
+
+          <!-- Carousel -->
+          <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-block" style="width: 100%">
+                  <h5>
+                    1. This is the top post on this page. OMG it is amazing!!!!
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block" style="width: 100%">
+                  <h5>
+                    2. This is the second but it would be impressive if there
+                    were more posts etc.
+                  </h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block" style="width: 100%">
+                  <h5>
+                    3. This is the third most popular post on this page....
+                  </h5>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </form>
-    </div>
-  </section>
-  <!-- NEW POST SECTION END -->
+      </div>
+    </section>
+    <!-- TOP 3 POST SECTION END -->
 
-  <!--************************************************************************************************-->
-  <!-- TOP 3 POST SECTION -->
-  <!--************************************************************************************************-->
-  <section id="topPostSection">
-    <div class="container-md" id="topPostContainer">
-      <div id="topPostContent">
-        <h2>Top 3 posts</h2>
+    <!--************************************************************************************************-->
+    <!-- INDIVIDUAL POST SECTION -->
+    <!--************************************************************************************************-->
+    <section id="individualPostSection">
+      <div class="container-md individualContainer">
+        <div class="individualPostContent">
+          <div class="row">
+            <div class="col-1 emojiCol">
+              <div>
+                <a class="btn btn-outline-primary emoji" href="#!" role="button"
+                  ><span class="icons">😍</span>
+                  <span class="emojiCounter ps-1">2</span>
+                </a>
+              </div>
+              <div>
+                <a class="btn emoji" href="#!" role="button"
+                  ><span class="icons">😐</span></a
+                >
+              </div>
+              <div>
+                <a class="btn emoji" href="#!" role="button"
+                  ><span class="icons">😔</span></a
+                >
+              </div>
+            </div>
+            <div class="col-10 ps-4">
+              <h3 class="postTitle py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, nisl
+                magna libero molestie vitae consectetur lobortis sit.
+              </h3>
+              <div class="postBody min" id="postBodySection">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                  auctor ipsum. Faucibus cras elementum ut nascetur orci
+                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                  magna arcu blandit felis sit enim mauris.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                  auctor ipsum. Faucibus cras elementum ut nascetur orci
+                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                  magna arcu blandit felis sit enim mauris.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                  auctor ipsum. Faucibus cras elementum ut nascetur orci
+                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                  magna arcu blandit felis sit enim mauris.
+                </p>
+
 
         <!-- Carousel -->
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -187,88 +282,42 @@
                 </p>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="carousel-caption d-block" style="width: 100%">
-                <p>3. This is the third most popular post on this page....</p>
-              </div>
+            <div class="col-1">
+              <a class="btn postEllipsisBtn" href="#!" role="button"
+                ><i class="fa-solid fa-ellipsis-vertical"></i
+              ></a>
+            </div>
+            <div class="row d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-primary mt-4 readMoreBtn"
+                onclick="togglePostBody()"
+              >
+                Read more
+              </button>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- TOP 3 POST SECTION END -->
-
-  <!--************************************************************************************************-->
-  <!-- INDIVIDUAL POST SECTION -->
-  <!--************************************************************************************************-->
-
-  <section id="latestPostSection">
-    <div class="container-md" id="latestPostContainer">
-      <div id="latestPostContent">
-        <h2 id="latestPosts">Latest Posts</h2>
-        <hr class="mx-auto" style="height:1.5px; width:50%; border-width:0;">
-
-        <section id="individualPostSection">
-          <div class="container-md individualContainer">
-            <div class="individualPostContent">
-              <div class="row">
-                <div class="col-1 emojiCol">
-                  <div>
-                    <a class="btn btn-outline-primary emoji" href="#!" role="button"><span class="icons">😍</span>
-                      <span class="emojiCounter ps-1">2</span>
-                    </a>
-                  </div>
-                  <div>
-                    <a class="btn emoji" href="#!" role="button"><span class="icons">😐</span></a>
-                  </div>
-                  <div>
-                    <a class="btn emoji" href="#!" role="button"><span class="icons">😔</span></a>
-                  </div>
-                </div>
-                <div class="col-10 ps-4">
-                  <h3 class="postTitle py-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, nisl
-                    magna libero molestie vitae consectetur lobortis sit.
-                  </h3>
-
-                  <div class="postBody">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                      scelerisque sit. Praesent urna, pharetra, id ullamcorper
-                      auctor ipsum. Faucibus cras elementum ut nascetur orci
-                      senectus. Non, aliquet tempor lorem donec vulputate. Tristique
-                      magna arcu blandit felis sit enim mauris.
-                    </p>
-
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                      scelerisque sit. Praesent urna, pharetra, id ullamcorper
-                      auctor ipsum. Faucibus cras elementum ut nascetur orci
-                      senectus. Non, aliquet tempor lorem donec vulputate. Tristique
-                      magna arcu blandit felis sit enim mauris.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                      scelerisque sit.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-1">
-                  <a class="btn postEllipsisBtn" href="#!" role="button"><i
-                      class="fa-solid fa-ellipsis-vertical"></i></a>
-                </div>
-                <div class="row d-flex justify-content-end">
-                  <button type="button" class="btn btn-primary mt-4 readMoreBtn">
-                    Read more
-                  </button>
-                </div>
+          <hr />
+          <div class="row hide" id="commentsSection">
+            <div class="row">
+              <div class="col">
+                <h5 class="postTitle py-2">Leave a comment or reaction</h5>
               </div>
-
+              <div class="col horizontalEmojis">
+                <a
+                  class="btn btn-outline-primary emojiComments"
+                  href="#!"
+                  role="button"
+                  ><span class="icons">😍</span>
+                  <span class="emojiCommentsCounter ps-2">2</span>
+                </a>
+                <a class="btn emojiComments" href="#!" role="button"
+                  ><span class="icons">😐</span></a
+                >
+                <a class="btn emojiComments" href="#!" role="button"
+                  ><span class="icons">😔</span></a
+                >
+              </div>
               <hr />
               <div class="row">
                 <div class="row">
@@ -301,15 +350,65 @@
                 <hr />
                 <div class="row">Other comments</div>
               </div>
-
               <div class="row d-flex justify-content-between">
                 <div class="col">XX days, XX hours ago</div>
                 <div class="col"><i class="fa-solid fa-message"></i>3</div>
               </div>
+              <hr />
+            </div>
+            <div class="row d-flex justify-content-center">
+              <div class="row commentContainer p-3 m-2">
+                <div class="col-1">
+                  <i class="fa-solid fa-circle-user userCommentIcon"></i>
+                </div>
+                <div class="col-11">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </div>
+                <div class="commentTimeStamp d-flex justify-content-end">
+                  2 days, 4 hours ago
+                </div>
+              </div>
+              <div class="row commentContainer p-3 m-2">
+                <div class="col-1">
+                  <i class="fa-solid fa-circle-user userCommentIcon"></i>
+                </div>
+                <div class="col-11">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </div>
+                <div class="commentTimeStamp d-flex justify-content-end">
+                  2 days, 4 hours ago
+                </div>
+              </div>
+              <div class="row commentContainer p-3 m-2">
+                <div class="col-1">
+                  <i class="fa-solid fa-circle-user userCommentIcon"></i>
+                </div>
+                <div class="col-11">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </div>
+                <div class="commentTimeStamp d-flex justify-content-end">
+                  2 days, 4 hours ago
+                </div>
+              </div>
+              <hr />
             </div>
           </div>
-        </section>
-
+          <div class="row d-flex">
+            <div class="col">2 days, 4 hours ago</div>
+            <div class="col commentIconAndNumber">
+              <button class="toggleCommentsBtn" onclick="toggleComments()">
+                <i class="fa-solid fa-message pe-2"></i>
+                <span class="commentCounter">3</span>
+              </button>
+            </div>
+          </div>
+          </section>
       </div>
     </div>
   </section>
