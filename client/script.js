@@ -7,15 +7,15 @@ section.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(section);
     const title = formData.get('postTitleContent');
-    const body = form.get('postBodyContent');
+    const Content = form.get('postBodyContent');
     
     const post = {
         title,
-        body
+        Content
     }
 
     console.log(post)
-}); 
+});
 
 
 
@@ -25,7 +25,7 @@ section.addEventListener('submit', (event) => {
 
 
 
-const data = {postTitle, posttext};
+/*const data = {postTitle, posttext};
 const options ={
     method: "POST",
     headers:{
@@ -34,4 +34,4 @@ const options ={
     body: JSON.stringify(data)
 };
 
-fetch("/newpost", options)
+fetch("/newpost", options)*/
