@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
 
   const post = {
     title,
-    Content,
+    Content
   };
 
   console.log(post);
