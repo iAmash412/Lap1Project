@@ -170,19 +170,26 @@
   font-size: 1.25rem;
 }
 
-#addGifBtn,
+#addGifBtn {
+  width: 50px;
+}
 #createPostBtn {
   width: 200px;
 }
 
 #addGifBtn:hover {
-  color: #fff;
-  background-color: #0d6efd;
+    filter: invert(62%) sepia(0%) saturate(1113%) hue-rotate(158deg) brightness(81%) contrast(93%); /* https://codepen.io/sosuke/pen/Pjoqqp */
+    border-radius: 10px;
+    transition: 0.2s linear;
 }
 
 #createPostBtn:hover {
   color: #0d6efd;
   background-color: transparent;
+}
+
+.gif{
+
 }
 
 /* *********************************************************************************** */

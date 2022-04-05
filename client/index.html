@@ -162,14 +162,10 @@
               class="form-control"
               placeholder="What’s on your mind & what have you been up to today to help the penguins ..."
             ></textarea>
+            
             <div class="d-flex justify-content-between">
-              <button
-                type="button"
-                id="addGifBtn"
-                class="btn btn-outline-primary my-4"
-              >
-                Add GIF
-              </button>
+              <img type="button" id="addGifBtn" class="gif" src="/client/images/gif_box_black_24dp.svg">
+              
               <button
                 type="submit"
                 id="createPostBtn"
@@ -177,6 +173,7 @@
               >
                 Create Post
               </button>
+              
             </div>
           </div>
         </form>
@@ -185,6 +182,17 @@
     <!-- NEW POST SECTION END -->
 
     <!--************************************************************************************************-->
+    <!-- GIF API-->
+    <script>
+      let APIKEY = "evn6IsMCnnpMUchrWJgF1HYW5uHwjuxM";
+      document.addEventListener("DOMContentLoaded", init);
+      function init() {
+        document.getElementById("addGifBtn").addEventListener("click", ev => {
+          ev.preventDefault(); // stop page reload
+          let url = `api.giphy.com/v1/gifs/search?	`
+        });
+      }
+    </script>
     <!-- TOP 3 POST SECTION -->
     <!--************************************************************************************************-->
     <section id="topPostSection">
