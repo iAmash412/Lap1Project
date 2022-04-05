@@ -1,4 +1,4 @@
-const express = require ('express');
+const express = require('express');
 const app = express();
 const cors = require('cors');
 const jsonfile = require('jsonfile');
@@ -6,26 +6,26 @@ const jsonfile = require('jsonfile');
 app.use(cors());
 app.use(express.json());
 
-app.get('/',(req, res)=>{
+app.get('/', (req, res) => {
     res.json({
-        message: 'Welcome to Penguin journals' 
+        message: 'Welcome to Penguin journals'
     });
 });
 
-function isValidPost(post){
-    return post.title && post.title.toString().trim() !== ''&&
+function isValidPost(post) {
+    return post.title && post.title.toString().trim() !== '' &&
         post.content && post.content.toString().trim() !== '';
 
 }
 
-app.post('/journal',(req, res)=>{
-    if (isValidPost(req.body)){
-        const post ={
+app.post('/journal', (req, res) => {
+    if (isValidPost(req.body)) {
+        const post = {
             title: req.body.title.toString(),
             content: req.body.content.toString(),
         }
         console.log(post)
-    }else{
+    } else {
         res.status(422);
         res.json({
             message: 'Sorry! Title and Journal are required!'

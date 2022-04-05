@@ -1,13 +1,13 @@
 //************************************************************************************************//
 //Event listener for CREATE POST//
 //************************************************************************************************//
-const section = document.getElementById("newPostSection");
+const form = document.querySelector("form");
 
-section.addEventListener("submit", (event) => {
+form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const formData = new FormData(section);
+  const formData = new FormData(form);
   const title = formData.get("postTitleContent");
-  const Content = form.get("postBodyContent");
+  const Content = formData.get("postBodyContent");
 
   const post = {
     title,
