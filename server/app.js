@@ -2,10 +2,39 @@ const express = require ('express');
 const app = express();
 const cors = require('cors');
 const jsonfile = require('jsonfile');
-app.use
-const port = 5000;
 
-app.get("/",(req,res)=>{
+app.use(cors());
+app.use(express.json());
+
+app.get('/',(req, res)=>{
+    res.json({
+        message: 'Welcome to Penguin journals' 
+    });
+});
+
+function isValidPost(post){
+    return post.title && post.title.toString().trim() !== ''&&
+        post.content && post.content.toString().trim() !== '';
+
+}
+
+app.post('/journal',(req, res)=>{
+    if (isValidPost(req.body)){
+        const post ={
+            title: req.body.title.toString(),
+            content: req.body.content.toString(),
+        }
+        console.log(post)
+    }else{
+        res.status(422);
+        res.json({
+            message: 'Sorry! Title and Journal are required!'
+        });
+    }
+});
+
+
+/*app.get("/",(req,res)=>{
     res.send("All posts")
 })
 
@@ -56,6 +85,6 @@ app.post('/sendPost', (req,res) =>  {
         }
     });
 });
-
+*/
 
 module.exports = app;
