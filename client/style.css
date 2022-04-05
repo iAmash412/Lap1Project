@@ -1,18 +1,37 @@
+/* *********************************************************************************** */
+/* Generic  */
 
+#newPostSection,
+#topPostSection,
+#individualPostSection {
+  margin-top: 50px;
+}
 
+#newPostContainer,
+#topPostContainer,
+.individualContainer {
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row {
+  padding-right: 0;
+}
+
+/* *********************************************************************************** */
 /* Navbar section  */
 
-.navbar{
-    padding: 10px;
+.navbar {
+  padding: 10px;
 }
 
-.navbar-brand{
-    padding: 0;
-    margin: 0;
+.navbar-brand {
+  padding: 0;
+  margin: 0;
 }
 
-.penguin-logo{
-    padding: 5px;
+.penguin-logo {
+  padding: 5px;
 }
 
 .search-box{
@@ -140,15 +159,6 @@
 /* *********************************************************************************** */
 /* New post section  */
 
-#newPostSection {
-  margin-top: 50px;
-}
-
-#newPostContainer {
-  background-color: #f8f9fa;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 #newPostContainer label {
   font-size: 1.5rem;
   padding-top: 20px;
@@ -177,15 +187,6 @@
 /* *********************************************************************************** */
 /* Top post section  */
 
-#topPostSection {
-  margin-top: 50px;
-}
-
-#topPostContainer {
-  background-color: #f8f9fa;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 #topPostContent {
   padding-top: 20px;
   padding-left: 20px;
@@ -201,6 +202,89 @@
   padding-bottom: 0;
   padding-top: 0;
 }
+
+/* *********************************************************************************** */
+/* Individual post section  */
+
+.individualPostContent {
+  padding: 20px;
+}
+
+.emojiCol {
+  padding-right: 0;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.emoji:hover {
+  background-color: #adb5bd;
+}
+
+.emojiCounter {
+  font-size: 1rem;
+}
+
+.postEllipsisBtn {
+  float: right;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  color: #adb5bd;
+}
+
+.postEllipsisBtn:hover {
+  color: #000;
+}
+
+.readMoreBtn {
+  position: relative;
+  right: 0;
+  width: 200px;
+}
+
+.horizontalEmojis {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+
+.emojiComments {
+  font-size: 1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+.emojiComments:hover {
+  background-color: #adb5bd;
+}
+
+.emojiCommentsCounter {
+  font-size: 0.8rem;
+}
+
+.icons {
+  align-self: center;
+}
+
+.sendCommentCol {
+  padding-right: 0;
+}
+
+.sendCommentBtn {
+  width: 100%;
+}
+
 /* *********************************************************************************** */
 /* Footer section  */
 
