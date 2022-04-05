@@ -279,9 +279,7 @@
                 >
               </div>
             </div>
-            <div class="row">
-              <!-- <input type="text" /> -->
-
+            <div class="row pt-2">
               <div class="col-10">
                 <input
                   type="text"
@@ -290,8 +288,11 @@
                   placeholder="comment"
                 />
               </div>
-              <div class="col-2">
-                <button type="submit" class="btn btn-primary mb-3">
+              <div class="col-2 sendCommentCol">
+                <button
+                  type="submit"
+                  class="btn btn-primary sendCommentBtn mb-3"
+                >
                   <i class="fa-solid fa-paper-plane"></i>
                   Send
                 </button>
@@ -301,9 +302,9 @@
             <div class="row">Other comments</div>
           </div>
 
-          <div class="row">
-            <div class="col">timestamp</div>
-            <div class="col">number of comments</div>
+          <div class="row d-flex justify-content-between">
+            <div class="col">XX days, XX hours ago</div>
+            <div class="col"><i class="fa-solid fa-message"></i>3</div>
           </div>
         </div>
       </div>
