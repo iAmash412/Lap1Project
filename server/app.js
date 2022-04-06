@@ -37,7 +37,7 @@ app.post('/journal', (req, res) => {
             title: req.body.title.toString(),
             Content: req.body.Content.toString(),
         }
-        const data = jsonfile.readFile('posts.json',(err, data) => {
+            jsonfile.readFile('posts.json',(err, data) => {
             data.push(post)
             jsonfile.writeFile("posts.json", data)
         });  
