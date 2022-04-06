@@ -221,12 +221,15 @@
     content: '';
     top: 8px;
   }
+  .out{
+      z-index: 1;
+  }
   .gif__box {
     display: block;
     position: fixed;
     top: 41.5%;
     left: -100%;
-    width: 300px;
+    width: 350px;
     height: 40%;
     margin: 40px;
     padding: 10px 0;
@@ -236,23 +239,28 @@
     transition-duration: .25s;
     border-radius: 10px;
     overflow: auto;
+    z-index: 2;
   }
 
   .searchInput{
       padding: 0;
   }
   .gif__item {
+    height: 120px;
+    width: 148px;
     display: grid;
-    top: 0;
+    z-index: inherit;
     padding: 30px;
-    color: transparent;
+    color: red;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     text-align: center;
     font-weight: 600;
     text-decoration: none;
     transition-duration: .25s;
+    z-index: inherit;
   }
+
 
   .margin-10{
       margin-left: -10px;

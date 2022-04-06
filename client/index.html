@@ -249,7 +249,6 @@
                 </ul>
               </div>
                 <!--Gif Menu-->
-              
               <button
                 type="submit"
                 id="createPostBtn"
@@ -280,12 +279,10 @@
         .then(content => {
           console.log(content.data);
           console.log("Meta", content.meta);
-          let fig = document.createElement("figure");
           let gifImg = document.createElement("img");
-          gifImg.src = content.data[0].images.downsized.url;
+          gifImg.src = content.data[0].images.downsized_small.mp4;
           gifImg.alt = content.data[0].title;
-          fig.appendChild(gifImg);
-          let out = document.querySelector("out");
+          let out = document.querySelector('.out');
         })
         .catch(err =>{
           console.error("This didn't work.");
