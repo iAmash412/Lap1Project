@@ -10,7 +10,7 @@ form.addEventListener("submit", (event) => {
   const title = formData.get("postTitleContent");
   const Content = formData.get("postBodyContent");
 
-  post = {
+  const post = {
     title,
     Content,
   };
