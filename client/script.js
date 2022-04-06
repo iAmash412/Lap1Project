@@ -1,20 +1,27 @@
 //************************************************************************************************//
 //Event listener for CREATE POST//
-//************************************************************************************************//
+//************************************************************************************************/
 const form = document.querySelector("form");
+const API_URL = "http://localhost:3000/journal"
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const formData = new FormData(form);
   const title = formData.get("postTitleContent");
   const Content = formData.get("postBodyContent");
-
-  const post = {
+ 
+  post = {
     title,
     Content
-  };
+};
+  fetch(API_URL, {
+    method: 'POST',
+    body: JSON.stringify(post),
+    headers: {
+      'content-type': 'application/json'
+    }
 
-  console.log(post);
+  })
 });
 
 //************************************************************************************************//
