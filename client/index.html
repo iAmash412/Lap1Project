@@ -282,7 +282,7 @@
           console.log("Meta", content.meta);
           let fig = document.createElement("figure");
           let gifImg = document.createElement("img");
-          gifImg.src = content.data[0].images.preview_gif.url;
+          gifImg.src = content.data[0].images.downsized.url;
           gifImg.alt = content.data[0].title;
           fig.appendChild(gifImg);
           let out = document.querySelector("out");
