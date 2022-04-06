@@ -350,171 +350,234 @@
   <!-- INDIVIDUAL POST SECTION END -->
 
   <!--************************************************************************************************-->
-  <!-- INDIVIDUAL POST SECTION -->
-  <!--************************************************************************************************-->
-  <section id="individualPostSection">
-    <div class="container-md individualContainer">
-      <div class="individualPostContent">
-        <div class="row">
-          <div class="col-sm-1 emojiCol">
-            <div>
-              <a class="btn btn-outline-primary emoji" href="#!" role="button"><span class="icons">😍</span>
-                <span class="emojiCounter ps-1">2</span>
-              </a>
-            </div>
-            <div>
-              <a class="btn emoji" href="#!" role="button"><span class="icons">😐</span></a>
-            </div>
-            <div>
-              <a class="btn emoji" href="#!" role="button"><span class="icons">😔</span></a>
-            </div>
-          </div>
-          <div class="col-sm-10 ps-4">
-            <h3 class="postTitle py-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, nisl
-              magna libero molestie vitae consectetur lobortis sit.
-            </h3>
-            <div class="postBody min" id="postBodySection">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit. Praesent urna, pharetra, id ullamcorper
-                auctor ipsum. Faucibus cras elementum ut nascetur orci
-                senectus. Non, aliquet tempor lorem donec vulputate. Tristique
-                magna arcu blandit felis sit enim mauris.
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit. Praesent urna, pharetra, id ullamcorper
-                auctor ipsum. Faucibus cras elementum ut nascetur orci
-                senectus. Non, aliquet tempor lorem donec vulputate. Tristique
-                magna arcu blandit felis sit enim mauris.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit. Praesent urna, pharetra, id ullamcorper
-                auctor ipsum. Faucibus cras elementum ut nascetur orci
-                senectus. Non, aliquet tempor lorem donec vulputate. Tristique
-                magna arcu blandit felis sit enim mauris.
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit. Praesent urna, pharetra, id ullamcorper
-                auctor ipsum. Faucibus cras elementum ut nascetur orci
-                senectus. Non, aliquet tempor lorem donec vulputate. Tristique
-                magna arcu blandit felis sit enim mauris.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit.
-              </p>
-            </div>
-          </div>
-          <div class="col-sm-1">
-            <a class="btn postEllipsisBtn" href="#!" role="button"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-          </div>
-          <div class="row d-flex justify-content-end">
-            <button type="button" class="btn btn-primary mt-4 readMoreBtn" onclick="togglePostBody()">
-              Read more
-            </button>
-          </div>
-        </div>
-
-        <hr />
-
-        <div class="row d-flex pt-1 pb-4">
-          <div class="col">2 days, 4 hours ago</div>
-          <div class="col commentIconAndNumber">
-            <button class="toggleCommentsBtn" onclick="toggleComments()">
-              <i class="fa-solid fa-message pe-2"></i>
-              <span class="commentCounter">3</span>
-            </button>
-          </div>
-        </div>
-
-        <div class="row d-flex justify-content-center hide" id="commentsSection">
-          <hr />
+    <!-- INDIVIDUAL POST SECTION -->
+    <!--************************************************************************************************-->
+    <section id="individualPostSection">
+      <div class="container-md individualContainer">
+        <div class="individualPostContent">
           <div class="row">
-            <div class="col ps-0">
-              <h4 class="py-2">Leave a comment or reaction</h4>
+            <div class="col-sm-1 emojiCol">
+              <div>
+                <button
+                  class="btn emoji m-1"
+                  onclick="emojiCounter1()"
+                  id="vEmojiBtn1"
+                >
+                  <span class="icons">😍</span>
+                  <span class="emojiCounter vEmojiCounterText1"></span>
+                </button>
+              </div>
+              <div>
+                <button
+                  class="btn emoji m-1"
+                  onclick="emojiCounter2()"
+                  id="vEmojiBtn2"
+                >
+                  <span class="icons">😐</span>
+                  <span class="emojiCounter vEmojiCounterText2"></span>
+                </button>
+              </div>
+              <div>
+                <button
+                  class="btn emoji m-1"
+                  onclick="emojiCounter3()"
+                  id="vEmojiBtn3"
+                >
+                  <span class="icons">😔</span>
+                  <span class="emojiCounter vEmojiCounterText3"></span>
+                </button>
+              </div>
             </div>
-            <div class="col horizontalEmojis">
-              <a class="btn btn-outline-primary emojiComments" href="#!" role="button"><span class="icons">😍</span>
-                <span class="emojiCommentsCounter ps-2">2</span>
-              </a>
-              <a class="btn emojiComments" href="#!" role="button"><span class="icons">😐</span></a>
-              <a class="btn emojiComments" href="#!" role="button"><span class="icons">😔</span></a>
+            <div class="col-sm-10 ps-4">
+              <h3 class="postTitle py-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. A, nisl
+                magna libero molestie vitae consectetur lobortis sit.
+              </h3>
+              <div class="postBody min" id="postBodySection">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                  auctor ipsum. Faucibus cras elementum ut nascetur orci
+                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                  magna arcu blandit felis sit enim mauris.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                  auctor ipsum. Faucibus cras elementum ut nascetur orci
+                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                  magna arcu blandit felis sit enim mauris.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                  auctor ipsum. Faucibus cras elementum ut nascetur orci
+                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                  magna arcu blandit felis sit enim mauris.
+                </p>
+
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit. Praesent urna, pharetra, id ullamcorper
+                  auctor ipsum. Faucibus cras elementum ut nascetur orci
+                  senectus. Non, aliquet tempor lorem donec vulputate. Tristique
+                  magna arcu blandit felis sit enim mauris.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="row ps-0 pt-2">
-            <div class="col-sm-10">
-              <input type="text" class="form-control" id="comment" placeholder="comment" />
+            <div class="col-sm-1">
+              <a class="btn postEllipsisBtn" href="#!" role="button"
+                ><i class="fa-solid fa-ellipsis-vertical"></i
+              ></a>
             </div>
-            <div class="col-sm-2 sendCommentCol">
-              <button type="submit" class="btn btn-primary sendCommentBtn mb-3">
-                <i class="fa-solid fa-paper-plane"></i>
-                Send
+            <div class="row d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-primary mt-4 readMoreBtn"
+                onclick="togglePostBody()"
+              >
+                Read more
               </button>
             </div>
           </div>
 
-          <div class="row d-flex justify-content-center">
-            <div class="row commentContainer p-3 m-2">
-              <div class="col-sm-1">
-                <i class="fa-solid fa-circle-user userCommentIcon"></i>
-              </div>
-              <div class="col-sm-11">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit.
-              </div>
-              <div class="commentTimeStamp d-flex justify-content-end">
-                2 days, 4 hours ago
-              </div>
-            </div>
-            <div class="row commentContainer p-3 m-2">
-              <div class="col-sm-1">
-                <i class="fa-solid fa-circle-user userCommentIcon"></i>
-              </div>
-              <div class="col-sm-11">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit.
-              </div>
-              <div class="commentTimeStamp d-flex justify-content-end">
-                2 days, 4 hours ago
-              </div>
-            </div>
-            <div class="row commentContainer p-3 m-2">
-              <div class="col-sm-1">
-                <i class="fa-solid fa-circle-user userCommentIcon"></i>
-              </div>
-              <div class="col-sm-11">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Aliquam risus, mauris diam urna integer hendrerit tincidunt
-                scelerisque sit.
-              </div>
-              <div class="commentTimeStamp d-flex justify-content-end">
-                2 days, 4 hours ago
-              </div>
-            </div>
-          </section>
+          <hr />
 
+          <div class="row d-flex pt-1 pb-4">
+            <div class="col">2 days, 4 hours ago</div>
+            <div class="col commentIconAndNumber">
+              <button class="toggleCommentsBtn" onclick="toggleComments()">
+                <i class="fa-solid fa-message pe-2"></i>
+                <span class="commentCounter">3</span>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="row d-flex justify-content-center hide"
+            id="commentsSection"
+          >
+            <hr />
+            <div class="row">
+              <div class="col ps-0">
+                <h4 class="py-2">Leave a comment or reaction</h4>
+              </div>
+              <div class="col horizontalEmojis">
+                <button
+                  class="btn emojiComments mx-1"
+                  onclick="emojiCounter1()"
+                  id="hEmojiBtn1"
+                >
+                  <span class="icons">😍</span>
+                  <span
+                    class="emojiCommentsCounter hEmojiCounterText1 ps-1"
+                  ></span>
+                </button>
+
+                <button
+                  class="btn emojiComments mx-1"
+                  onclick="emojiCounter2()"
+                  id="hEmojiBtn2"
+                >
+                  <span class="icons">😐</span>
+                  <span
+                    class="emojiCommentsCounter hEmojiCounterText2 ps-1"
+                  ></span>
+                </button>
+
+                <button
+                  class="btn emojiComments mx-1"
+                  onclick="emojiCounter3()"
+                  id="hEmojiBtn3"
+                >
+                  <span class="icons">😔</span>
+                  <span
+                    class="emojiCommentsCounter hEmojiCounterText3 ps-1"
+                  ></span>
+                </button>
+              </div>
+            </div>
+            <div class="row ps-0 pt-2">
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="comment"
+                  placeholder="comment"
+                />
+              </div>
+              <div class="col-sm-2 sendCommentCol">
+                <button
+                  type="submit"
+                  class="btn btn-primary sendCommentBtn mb-3"
+                >
+                  <i class="fa-solid fa-paper-plane"></i>
+                  Send
+                </button>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+              <div class="row commentContainer p-3 m-2">
+                <div class="col-sm-1">
+                  <i class="fa-solid fa-circle-user userCommentIcon"></i>
+                </div>
+                <div class="col-sm-11">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </div>
+                <div class="commentTimeStamp d-flex justify-content-end">
+                  2 days, 4 hours ago
+                </div>
+              </div>
+              <div class="row commentContainer p-3 m-2">
+                <div class="col-sm-1">
+                  <i class="fa-solid fa-circle-user userCommentIcon"></i>
+                </div>
+                <div class="col-sm-11">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </div>
+                <div class="commentTimeStamp d-flex justify-content-end">
+                  2 days, 4 hours ago
+                </div>
+              </div>
+              <div class="row commentContainer p-3 m-2">
+                <div class="col-sm-1">
+                  <i class="fa-solid fa-circle-user userCommentIcon"></i>
+                </div>
+                <div class="col-sm-11">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Aliquam risus, mauris diam urna integer hendrerit tincidunt
+                  scelerisque sit.
+                </div>
+                <div class="commentTimeStamp d-flex justify-content-end">
+                  2 days, 4 hours ago
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+
 
   <!--************************************************************************************************-->
   <!-- FOOTER -->
