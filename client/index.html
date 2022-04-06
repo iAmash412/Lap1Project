@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -38,7 +37,6 @@
           </button>
         </div>
       </div>
-
       <!-- Hamburger Menu-->
       <div class="hamburger-menu col-sm-6">
         <input id="menu__toggle" type="checkbox" />
@@ -69,7 +67,7 @@
             <li>
               <a class="menu__item" href="#">
                 <div class="icon">
-                  <i class="fa-solid fa-bookmark"></i>
+                  <i class="fa-solid fa-list"></i>
                 </div>
                 Lists
               </a>
@@ -83,7 +81,6 @@
                 About
               </a>
             </li>
-
             <li>
               <a class="menu__item" href="#">
                 <div class="icon">
@@ -92,7 +89,6 @@
                 Options
               </a>
             </li>
-
             <li>
               <a class="menu__item" href="#">
                 <div class="icon">
@@ -101,7 +97,6 @@
                 Team
               </a>
             </li>
-
             <li>
               <a class="menu__item" href="#">
                 <div class="icon">
@@ -140,36 +135,93 @@
   </header>
   <!-- HEADER END -->
 
-  <!--************************************************************************************************-->
-  <!-- NEW POST SECTION -->
-  <!--************************************************************************************************-->
-  <section id="newPostSection">
-    <div class="container-md" id="newPostContainer">
-      <form>
-        <h2 id="newPostsTitle">Create a new post</h2>
-        <hr class="mx-auto titleLine" />
-        <div class="px-4">
-          <!-- <label for="postTitleContent" class="form-label">Title</label> -->
-          <h5>Title</h5>
-          <input type="text" class="form-control" id="postTitleContent" name="postTitleContent" placeholder="Give your post a title" />
-          <!-- <label for="postBodyContent" class="form-label">Body</label> -->
-          <h5>Body</h5>
-          <textarea name="postBodyContent" id="postBodyContent" rows="5" maxlength="1200" class="form-control"
-            placeholder="What’s on your mind & what have you been up to today to help the penguins ..."></textarea>
+    <!--************************************************************************************************-->
+    <!-- NEW POST SECTION -->
+    <!--************************************************************************************************-->
+    <section id="newPostSection">
+      <div class="container-md" id="newPostContainer">
+        <form>
+          <div class="px-4">
+            <label for="postTitleContent" class="form-label">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="postTitleContent"
+              placeholder="Give your post a title"
+            />
 
-          <div class="d-flex justify-content-between">
-            <img type="button" id="addGifBtn" class="gif" src="images/gif_box_black_24dp.svg" />
-
-            <button type="submit" id="createPostBtn" class="btn btn-primary my-4">
-              Create Post
-            </button>
+            <label for="postBodyContent" class="form-label">Body</label>
+            <textarea
+              name=""
+              id="postBodyContent"
+              rows="5"
+              maxlength="1200"
+              class="form-control"
+              placeholder="What’s on your mind & what have you been up to today to help the penguins ..."
+            ></textarea>
+            
+            <div class="d-flex justify-content-between">
+              <!--Gif Menu-->
+              <div class="hamburger-menu">
+                <input id="gif__toggle" type="checkbox" />
+                <label class="gif__btn" for="gif__toggle">
+                  <span><img type="button" id="addGifBtn" class="gif" src="/client/images/gif_box_black_24dp.svg"></span>
+                </label>
+            
+                <ul class="gif__box">
+                  <li>
+                    <a class="gif__search" href="#">
+              <!--Gif Search Bar-->
+                      <div class="w-100 p-3 h-25 d-inline-block" >
+                        <div class="input-group form-container">
+                          <input type="text" name="search" id="gif-search" class="form-control search-input" placeholder="Search GIPHY" autocomplete="off">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+              <!--Gif Rows-->
+                  <div class="container">
+                    <div class="row row-cols-2">
+                      <li>
+                        <div class="col">
+                          <a class="gif__item" href="#">1</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item" href="#">2</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item" href="#">3</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col">
+                          <a class="gif__item" href="#">4</a>
+                        </div>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+                <!--Gif Menu-->
+              
+              <button
+                type="submit"
+                id="createPostBtn"
+                class="btn btn-primary my-4">Create Post
+              </button>
+              
+            </div>
           </div>
         </div>
       </form>
     </div>
   </section>
   <!-- NEW POST SECTION END -->
-
   <!--************************************************************************************************-->
   <!-- GIF API-->
   <script></script>
@@ -210,8 +262,8 @@
     </div>
   </section>
   <!-- TOP 3 POST SECTION END -->
-
   <!--************************************************************************************************-->
+  
   <!-- LATEST POST SECTION -->
   <!--************************************************************************************************-->
   <section id="latestPostSection">
@@ -385,7 +437,8 @@
                 2 days, 4 hours ago
               </div>
             </div>
-          </div>
+          </section>
+
         </div>
       </div>
     </div>
@@ -404,15 +457,12 @@
       <section class="mb-4" id="socialMedia">
         <!-- Facebook -->
         <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-
         <!-- Twitter -->
         <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
         <!-- Instagram -->
         <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-
         <!-- Linkedin -->
         <a class="btn btn-outline-dark btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-
         <!-- Github -->
         <a class="btn btn-outline-dark btn-floating m-1" href="https://github.com/Prishal-git/Lap1Project"
           target="”_blank”" role="button"><i class="fab fa-github"></i></a>
