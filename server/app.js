@@ -2,9 +2,13 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const jsonfile = require('jsonfile');
-
+const fs = require('fs')
+const data = fs.readFileSync('posts.json');
+const posts = JSON.parse(data); 
+    
 app.use(cors());
 app.use(express.json());
+
 
 app.get('/', (req, res) => {
     res.json({
@@ -12,27 +16,33 @@ app.get('/', (req, res) => {
     });
 });
 
-function isValidPost(post) {
-    return post.title && post.title.toString().trim() !== '' &&
-        post.content && post.content.toString().trim() !== '';
+app.get('/journal', (req, res) => {
+    
+});
 
-}
 
 app.post('/journal', (req, res) => {
+    function isValidPost(post) {
+        return post.title && post.title.toString().trim() !== '' &&
+            post.Content && post.Content.toString().trim() !== '';
+    
+    }
     if (isValidPost(req.body)) {
         const post = {
             title: req.body.title.toString(),
-            content: req.body.content.toString(),
+            Content: req.body.Content.toString(),
         }
-        console.log(post)
+        fs.writeFile("posts.json", JSON.stringify(post),(err)=>{
+            if(err) throw err;
+            console.log("your post has been sent.")
+        })
     } else {
         res.status(422);
         res.json({
             message: 'Sorry! Title and Journal are required!'
         });
-    }
+}
 });
-
 
 /*app.get("/",(req,res)=>{
     res.send("All posts")
