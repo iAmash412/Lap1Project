@@ -80,6 +80,7 @@ Organising and planning
 - Did all the planning and a big part of the front-end work on day one.
 - Dividing up the team and allowing half of the team to focus on front-end and the other on back-end in for the first two days really helped creating the skeletons of the application 
 - Responsive Navbar with detailed Hamburger Menu
+- GIPFY API working
 
 ## Chalenges
 
@@ -90,7 +91,7 @@ Organising and planning
 
 # Bugs (that still exist)
 
-- 
+- Despite GIPFY API working, the individual gifs do not appear inside the gif search menu. (ERROR - SameSite attribute was not set or is invalid).
 
 ---
 
